@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Work+Sans:wght@300;400;500;600&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Fraunces', Georgia, serif;
+  --font-body: 'Work Sans', system-ui, sans-serif;
+}
+
+:root {
+  --background: #f4f5f7;
+  --foreground: #16181d;
+  --card: #eceef2;
+  --card-foreground: #16181d;
+  --primary: #16181d;
+  --primary-foreground: #f4f5f7;
+  --secondary: #e2e5eb;
+  --secondary-foreground: #16181d;
+  --muted: #d0d4dc;
+  --muted-foreground: #6b7280;
+  --accent: #3b5bdb;
+  --accent-foreground: #f4f5f7;
+  --border: rgba(22, 24, 29, 0.12);
+  --ring: #3b5bdb;
+  --radius: 2px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body);
+  font-weight: 400;
+  -webkit-font-smoothing: antialiased;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+::selection {
+  background: var(--accent);
+  color: var(--accent-foreground);
+}
