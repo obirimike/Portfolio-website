@@ -6,7 +6,7 @@ Professional single-page portfolio built with React, Vite, and Tailwind CSS. Thi
 
 Key points
 
-- Purpose: Present Addo Michael Obiri as a software engineer with concise case studies, technical skills, and contact actions.
+- Purpose: Present Addo Michael Obiri as a software engineer with concise case studies, technical skills, projects built and contact actions.
 - Architecture: Static single-page React application, served by Vite in development and suitable for static hosting in production.
 - Opinionated defaults: Tailwind CSS for utilities, React 19, and TypeScript-ready project structure.
 
