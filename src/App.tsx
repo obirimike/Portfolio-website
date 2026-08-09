@@ -130,7 +130,7 @@ export default function App() {
         {/* Skills strip */}
         <div style={{ marginTop: '72px', borderTop: '1px solid var(--border)', paddingTop: '24px', display: 'flex', gap: '48px', overflow: 'hidden', flexWrap: 'wrap' }}>
           {skills.map(s => (
-            <span key={s} style={{ fontSize: '13px', fontWeight: 400, color: 'var(--muted-foreground)', whiteSpace: 'nowrap', letterSpacing: '0.02em' }}>
+            <span key={s} style={{ fontSize: '13px', fontWeight: 600, color: 'var(--muted-foreground)', whiteSpace: 'nowrap', letterSpacing: '0.02em', transition: 'color 0.2s' }} onMouseEnter={e => (e.currentTarget.style.color = 'var(--foreground)')} onMouseLeave={e => (e.currentTarget.style.color = 'var(--muted-foreground)')}>
               {s}
             </span>
           ))}
