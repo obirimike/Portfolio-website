@@ -43,11 +43,21 @@ const caseStudies = [
     image: 'https://images.unsplash.com/photo-1555099962-4199c345e5dd?w=900&h=600&fit=crop&auto=format',
     color: '#e4dcea',
   },
+  {
+    id: 5,
+    title: 'Real-time chat application for a local NGO to facilitate communication between volunteers and beneficiaries',
+    category: 'Real-time Communication',
+    year: '2021',
+    tags: ['React', 'Socket.io', 'Node.js', 'MongoDB'],
+    outcome: 'Successfully launched the chat application, resulting in a 40% increase in volunteer engagement and improved communication with beneficiaries',
+    image: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=900&h=600&fit=crop&auto=format',
+    color: '#e4e8dc',
+  }
 ]
 
 const skills = [
   'React', 'TypeScript', 'Node.js', 'PostgreSQL','MongoDB', 'REST APIs',
-  'Git', 'Docker', 'Python', 'System Design', 'Agile',
+  'Git', 'Docker', 'Python', 'PHP', 'UI/UX Design', 'System Design', 'Linux', 'Agile',
 ]
 
 export default function App() {
@@ -181,7 +191,7 @@ export default function App() {
               </div>
               <div style={{ marginTop: '24px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
                 {[
-                  ['Currently', 'Freelance / Open to roles'],
+                  ['Currently', 'Freelancing / Open to roles'],
                   ['Based in', 'Accra, Ghana'],
                   ['Experience', '4 years'],
                   ['Education', 'BSc Computer Science, University of Ghana'],
