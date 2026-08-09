@@ -23,7 +23,7 @@ Tech stack
 
 Quick start
 
-1. Install dependencies (Windows — npm):
+1. Install dependencies 
 
 ```bash
 npm install
