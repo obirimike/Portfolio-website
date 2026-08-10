@@ -95,7 +95,7 @@ a {
 .nav-logo {
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: 18px;
+  font-size: 28px;
   letter-spacing: -0.02em;
 }
 
@@ -742,7 +742,7 @@ a {
   }
 
   .nav-logo {
-    font-size: 17px;
+    font-size: 25px;
   }
 
   .nav-links {
@@ -751,6 +751,7 @@ a {
 
   .mobile-menu-button {
     display: block;
+    font-size: 24px;
   }
 
   /* HERO */
