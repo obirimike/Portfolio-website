@@ -421,7 +421,7 @@ a {
 
 .about-photo {
   width: 100%;
-  aspect-ratio: 3 / 4;
+  aspect-ratio: 5 / 6;
   background: var(--muted);
   overflow: hidden;
 }
@@ -436,6 +436,8 @@ a {
 
 .about-details {
   margin-top: 24px;
+  padding: 0 8px;
+
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -446,8 +448,8 @@ a {
   justify-content: space-between;
   align-items: flex-start;
   border-bottom: 1px solid var(--border);
-  padding-bottom: 8px;
-  gap: 12px;
+  padding:10px 4px;
+  gap: 16px;
 }
 
 .about-detail-label {
@@ -826,7 +828,8 @@ a {
   }
 
   .about-photo {
-    max-width: 420px;
+    max-width: 360px;
+    aspect-ratio: 4 / 5;
     margin: 0 auto;
   }
 
@@ -835,7 +838,7 @@ a {
   }
 
   .about-eyebrow {
-    font-size: 11px;
+    font-size: 15px;
     margin-bottom: 20px;
   }
 
