@@ -1,5 +1,5 @@
 import React from 'react'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import profilePic from './assets/profilePic/MIKE.jpeg'
 
 const caseStudies = [
@@ -63,7 +63,27 @@ const skills = [
 export default function App() {
   const [activeFilter, setActiveFilter] = useState<string>('All')
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [showBackToTop, setShowBackToTop] = useState(false)
   const categories = ['All', ...Array.from(new Set(caseStudies.map(c => c.category)))]
+
+  useEffect(() => {
+  const handleScroll = () => {
+    setShowBackToTop(window.scrollY > 400)
+  }
+
+  window.addEventListener('scroll', handleScroll)
+
+  return () => {
+    window.removeEventListener('scroll', handleScroll)
+  }
+}, [])
+
+const scrollToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth',
+  })
+}
 
   const filtered = activeFilter === 'All'
     ? caseStudies
@@ -334,6 +354,16 @@ export default function App() {
           </span>
         </div>
       </footer>
+
+      {showBackToTop && (
+  <button
+    className="back-to-top"
+    onClick={scrollToTop}
+    aria-label="Back to top"
+  >
+    ↑
+  </button>
+)}
 
     </div>
   )

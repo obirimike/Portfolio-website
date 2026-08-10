@@ -658,6 +658,52 @@ a {
   letter-spacing: 0.02em;
 }
 
+/* ------------------------------
+   BACK TO TOP
+------------------------------ */
+
+.back-to-top {
+  position: fixed;
+  right: 28px;
+  bottom: 28px;
+
+  width: 46px;
+  height: 46px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: 1px solid var(--border);
+  border-radius: 50%;
+
+  background: var(--foreground);
+  color: var(--primary-foreground);
+
+  font-size: 20px;
+  line-height: 1;
+
+  cursor: pointer;
+
+  z-index: 1000;
+
+  box-shadow: 0 8px 24px rgba(22, 24, 29, 0.15);
+
+  transition:
+    transform 0.2s ease,
+    opacity 0.2s ease,
+    background 0.2s ease;
+}
+
+.back-to-top:hover {
+  transform: translateY(-4px);
+  background: var(--accent);
+}
+
+.back-to-top:active {
+  transform: translateY(-1px);
+}
+
 /* ==========================================================
    TABLET
 ========================================================== */
@@ -937,4 +983,14 @@ a {
     padding-left: 16px;
     padding-right: 16px;
   }
+
+  @media (max-width: 768px) {
+  .back-to-top {
+    right: 18px;
+    bottom: 18px;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+  }
+}
 }
