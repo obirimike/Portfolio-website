@@ -77,7 +77,7 @@ Deployment
 Notes and recommendations
 
 - This repository was cleaned of Figma Make tooling; it now behaves as a regular Vite project.
-- `package-lock.json` is the canonical lockfile for npm in this workspace.
+- `package-lock.json` is the canonical lockfile for npm in this Projectsspace.
 - If you plan to store large binary files, re-enable Git LFS and add an appropriate `.gitattributes` file.
 
 Contact

@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Work+Sans:wght@300;400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Projects+Sans:wght@300;400;500;600&display=swap');
 
 @import 'tailwindcss';
 
 @theme {
   --font-display: 'Fraunces', Georgia, serif;
-  --font-body: 'Work Sans', system-ui, sans-serif;
+  --font-body: 'Projects Sans', system-ui, sans-serif;
 }
 
 :root {
@@ -207,17 +207,17 @@ a {
 }
 
 /* ------------------------------
-   WORK / PROJECTS
+   Projects / PROJECTS
 ------------------------------ */
 
-.work-section {
+.Projects-section {
   width: 100%;
   max-width: 1180px;
   margin: 0 auto;
   padding: 0 32px 100px;
 }
 
-.work-header {
+.Projects-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -795,13 +795,13 @@ a {
     font-size: 12px;
   }
 
-  /* WORK */
+  /* Projects */
 
-  .work-section {
+  .Projects-section {
     padding: 0 20px 64px;
   }
 
-  .work-header {
+  .Projects-header {
     align-items: flex-start;
     flex-direction: column;
     gap: 24px;
@@ -974,7 +974,7 @@ a {
 
   .about-container,
   .process-section,
-  .work-section {
+  .Projects-section {
     padding-left: 16px;
     padding-right: 16px;
   }

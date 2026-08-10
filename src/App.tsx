@@ -94,14 +94,14 @@ const scrollToTop = () => {
 
       {/* Nav */}
       <nav style={{ borderBottom: '1px solid var(--border)' }}>
-  <div className="nav-container">
+       <div className="nav-container">
 
     <span className="nav-logo">
       Addo Michael Obiri
     </span>
 
     <div className="nav-links">
-      {['Work', 'About', 'Process', 'Contact'].map(item => (
+      {['Projects', 'About', 'Process', 'Contact'].map(item => (
         <a
           key={item}
           href={`#${item.toLowerCase()}`}
@@ -131,7 +131,7 @@ const scrollToTop = () => {
         padding: '16px 20px 20px',
       }}
     >
-      {['Work', 'About', 'Process', 'Contact'].map(item => (
+      {['Projects', 'About', 'Process', 'Contact'].map(item => (
         <a
           key={item}
           href={`#${item.toLowerCase()}`}
@@ -192,9 +192,9 @@ const scrollToTop = () => {
   </div>
   </section>
 
-      {/* Work */}
-     <section id="work" className="work-section">
-        <div className="work-header">
+      {/* Projects */}
+     <section id="Projects" className="Projects-section">
+        <div className="Projects-header">
   <h2 className="section-title">
     Selected Projects
   </h2>
@@ -266,7 +266,7 @@ const scrollToTop = () => {
                   I'm a software developer with a BSc in Computer Science from the University of Ghana and four years of experience building production systems across fintech, mobility, NGO operations, and open-source tooling. I thrive in environments where good engineering can directly change outcomes for real people.
                 </p>
                 <p style={{ fontSize: '16px', lineHeight: 1.8, color: 'var(--muted-foreground)', margin: 0, fontWeight: 300 }}>
-                  My work spans the full stack — from designing PostgreSQL schemas and WebSocket servers to building accessible React interfaces and shipping npm packages used in production. I write code that others can read, test, and extend without needing to ask me questions.
+                  My Projects spans the full stack — from designing PostgreSQL schemas and WebSocket servers to building accessible React interfaces and shipping npm packages used in production. I write code that others can read, test, and extend without needing to ask me questions.
                 </p>
                 <p style={{ fontSize: '16px', lineHeight: 1.8, color: 'var(--muted-foreground)', margin: 0, fontWeight: 300 }}>
                   I'm currently freelancing and open to full-time roles — especially with teams building infrastructure, developer tools, or products with impact in emerging markets.
