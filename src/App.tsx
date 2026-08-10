@@ -73,7 +73,7 @@ export default function App() {
 
       {/* Nav */}
       <nav style={{ borderBottom: '1px solid var(--border)' }}>
-        <div style={{ maxWidth: '1180px', margin: '0 auto', padding: '0 32px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '64px' }}>
+        <div style={{ width: '100%', maxWidth: '1180px', margin: '0 auto', padding: '0 32px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '64px' }}>
           <span style={{ fontFamily: 'var(--font-display)', fontWeight: 400, fontSize: '18px', letterSpacing: '-0.02em' }}>
             Addo Michael Obiri
           </span>
@@ -183,7 +183,7 @@ export default function App() {
 
       {/* About */}
       <section id="about" style={{ borderTop: '1px solid var(--border)', background: 'var(--card)' }}>
-        <div style={{ maxWidth: '1180px', margin: '0 auto', padding: '100px 32px' }}>
+        <div style={{ width: '100%', maxWidth: '1180px', margin: '0 auto', padding: '100px 32px' }}>
           <div style={{ display: 'grid', gridTemplateColumns: '340px 1fr', gap: '96px', alignItems: 'start' }}>
 
             {/* Photo col */}
@@ -226,7 +226,7 @@ export default function App() {
                 Code as craft,<br />
                 <em style={{ fontStyle: 'italic' }}>not commodity.</em>
               </h2>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', maxWidth: '540px' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', width: '100%', maxWidth: '540px' }}>
                 <p style={{ fontSize: '16px', lineHeight: 1.8, color: 'var(--muted-foreground)', margin: 0, fontWeight: 300 }}>
                   I'm a software developer with a BSc in Computer Science from the University of Ghana and four years of experience building production systems across fintech, mobility, NGO operations, and open-source tooling. I thrive in environments where good engineering can directly change outcomes for real people.
                 </p>
@@ -285,7 +285,7 @@ export default function App() {
       </section>
 
       {/* Process */}
-      <section id="process" style={{ maxWidth: '1180px', margin: '0 auto', padding: '100px 32px' }}>
+      <section id="process" style={{ width: '100%', maxWidth: '1180px', margin: '0 auto', padding: '100px 32px' }}>
         <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '28px', fontWeight: 400, letterSpacing: '-0.02em', marginBottom: '56px' }}>
           How I build
         </h2>
@@ -318,7 +318,7 @@ export default function App() {
 
       {/* Footer */}
       <footer id="contact" style={{ borderTop: '1px solid var(--border)', padding: '40px 32px' }}>
-        <div style={{ maxWidth: '1180px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        <div style={{ width: '100%', maxWidth: '1180px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <span style={{ fontFamily: 'var(--font-display)', fontWeight: 400, fontSize: '16px', letterSpacing: '-0.02em' }}>
             Addo Michael Obiri
           </span>
