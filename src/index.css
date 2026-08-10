@@ -66,19 +66,88 @@ a {
   color: var(--accent-foreground);
 }
 
+/* ------------------------------
+   SHARED CONTAINER
+------------------------------ */
+
+.page-container {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+/* ------------------------------
+   NAVBAR
+------------------------------ */
+
+.nav-container {
+  width: 100%;
+  max-width: 1180px;
+  height: 64px;
+  margin: 0 auto;
+  padding: 0 32px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-logo {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 18px;
+  letter-spacing: -0.02em;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.nav-link {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--muted-foreground);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: color 0.2s;
+}
+
+.nav-link:hover {
+  color: var(--foreground);
+}
+
+.mobile-menu-button {
+  display: none;
+  border: 0;
+  background: transparent;
+  color: var(--foreground);
+  font-size: 24px;
+  cursor: pointer;
+  padding: 4px;
+}
+
+/* ------------------------------
+   HERO
+------------------------------ */
+
 .hero-section {
   width: 100%;
   max-width: 1180px;
   margin: 0 auto;
   padding: 96px 32px 80px;
-  box-sizing: border-box;
 }
 
 .hero-content {
   display: grid;
-  grid-template-columns: 1fr 320px;
+  grid-template-columns: minmax(0, 1fr) 320px;
   gap: 64px;
   align-items: end;
+}
+
+.hero-main {
+  min-width: 0;
 }
 
 .hero-eyebrow {

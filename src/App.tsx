@@ -62,6 +62,7 @@ const skills = [
 
 export default function App() {
   const [activeFilter, setActiveFilter] = useState<string>('All')
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const categories = ['All', ...Array.from(new Set(caseStudies.map(c => c.category)))]
 
   const filtered = activeFilter === 'All'
@@ -73,32 +74,60 @@ export default function App() {
 
       {/* Nav */}
       <nav style={{ borderBottom: '1px solid var(--border)' }}>
-        <div style={{ width: '100%', maxWidth: '1180px', margin: '0 auto', padding: '0 32px', display: 'flex', alignItems: 'center', justifyContent: 'space-between', height: '64px' }}>
-          <span style={{ fontFamily: 'var(--font-display)', fontWeight: 400, fontSize: '18px', letterSpacing: '-0.02em' }}>
-            Addo Michael Obiri
-          </span>
-          <div style={{ display: 'flex', gap: '32px', alignItems: 'center' }}>
-            {['Work', 'About', 'Process', 'Contact'].map(item => (
-              <a
-                key={item}
-                href={`#${item.toLowerCase()}`}
-                style={{
-                  fontSize: '14px',
-                  fontWeight: 400,
-                  color: 'var(--muted-foreground)',
-                  textDecoration: 'none',
-                  letterSpacing: '0.02em',
-                  transition: 'color 0.2s',
-                }}
-                onMouseEnter={e => (e.currentTarget.style.color = 'var(--foreground)')}
-                onMouseLeave={e => (e.currentTarget.style.color = 'var(--muted-foreground)')}
-              >
-                {item}
-              </a>
-            ))}
-          </div>
-        </div>
-      </nav>
+  <div className="nav-container">
+
+    <span className="nav-logo">
+      Addo Michael Obiri
+    </span>
+
+    <div className="nav-links">
+      {['Work', 'About', 'Process', 'Contact'].map(item => (
+        <a
+          key={item}
+          href={`#${item.toLowerCase()}`}
+          className="nav-link"
+        >
+          {item}
+        </a>
+      ))}
+    </div>
+
+    <button
+      className="mobile-menu-button"
+      onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+      aria-label="Toggle navigation menu"
+      aria-expanded={mobileMenuOpen}
+    >
+      {mobileMenuOpen ? '×' : '☰'}
+    </button>
+
+  </div>
+
+  {mobileMenuOpen && (
+    <div
+      style={{
+        borderTop: '1px solid var(--border)',
+        background: 'var(--background)',
+        padding: '16px 20px 20px',
+      }}
+    >
+      {['Work', 'About', 'Process', 'Contact'].map(item => (
+        <a
+          key={item}
+          href={`#${item.toLowerCase()}`}
+          onClick={() => setMobileMenuOpen(false)}
+          className="nav-link"
+          style={{
+            display: 'block',
+            padding: '12px 0',
+          }}
+        >
+          {item}
+        </a>
+      ))}
+    </div>
+  )}
+</nav>
     {/* Hero */}
     <section className="hero-section">
      <div className="hero-content">
