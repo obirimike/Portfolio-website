@@ -173,39 +173,33 @@ export default function App() {
   </section>
 
       {/* Work */}
-      <section id="work" style={{ width: '100%', maxWidth: '1180px', margin: '0 auto', padding: '0 32px 100px' }}>
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '40px' }}>
-          <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '28px', fontWeight: 400, letterSpacing: '-0.02em', margin: 0 }}>
-            Selected Projects
-          </h2>
-          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-            {categories.map(cat => (
-              <button
-                key={cat}
-                onClick={() => setActiveFilter(cat)}
-                style={{
-                  fontSize: '13px',
-                  fontWeight: 400,
-                  padding: '6px 16px',
-                  border: '1px solid',
-                  borderColor: activeFilter === cat ? 'var(--foreground)' : 'var(--border)',
-                  background: activeFilter === cat ? 'var(--foreground)' : 'transparent',
-                  color: activeFilter === cat ? 'var(--primary-foreground)' : 'var(--muted-foreground)',
-                  cursor: 'pointer',
-                  borderRadius: 'var(--radius)',
-                  transition: 'all 0.2s',
-                  letterSpacing: '0.02em',
-                }}
-              >
-                {cat}
-              </button>
-            ))}
-          </div>
-        </div>
+     <section id="work" className="work-section">
+        <div className="work-header">
+  <h2 className="section-title">
+    Selected Projects
+  </h2>
 
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: '2px' }}>
+  <div className="project-filters">
+    {categories.map(cat => (
+      <button
+        key={cat}
+        onClick={() => setActiveFilter(cat)}
+        className={`filter-button ${
+          activeFilter === cat ? 'active' : ''
+        }`}
+      >
+        {cat}
+      </button>
+    ))}
+  </div>
+</div>
+       <div className="projects-grid">
           {filtered.map((study, i) => (
-            <CaseStudyCard key={study.id} study={study} large={i === 0 && filtered.length >= 3} />
+            <CaseStudyCard
+             key={study.id} 
+             study={study} 
+             large={i === 0 && filtered.length >= 3}
+              />
           ))}
         </div>
       </section>
@@ -388,29 +382,21 @@ function CaseStudyCard({ study, large }: { study: typeof caseStudies[0]; large: 
 
   return (
     <div
-      style={{
-        gridColumn: large ? 'span 2' : 'span 1',
-        position: 'relative',
-        overflow: 'hidden',
-        cursor: 'pointer',
-        background: study.color,
-      }}
+       className={`case-study-card ${large ? 'large' : ''}`}
+       style={{
+         background: study.color,
+       }}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
-      <div style={{ aspectRatio: large ? '16/7' : '4/3', overflow: 'hidden', position: 'relative' }}>
+      <div
+       className={`case-study-image ${large ? 'large' : 'normal'}`}
+       >
+
         <img
           src={study.image}
           alt={study.title}
-          style={{
-            width: '100%',
-            height: '100%',
-            objectFit: 'cover',
-            display: 'block',
-            transform: hovered ? 'scale(1.04)' : 'scale(1)',
-            transition: 'transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94)',
-            filter: 'grayscale(15%)',
-          }}
+          
         />
         <div style={{
           position: 'absolute',
