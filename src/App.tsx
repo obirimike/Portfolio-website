@@ -205,51 +205,43 @@ export default function App() {
       </section>
 
       {/* About */}
-      <section id="about" style={{ borderTop: '1px solid var(--border)', background: 'var(--card)' }}>
-        <div style={{ width: '100%', maxWidth: '1180px', margin: '0 auto', padding: '100px 32px' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: '340px 1fr', gap: '96px', alignItems: 'start' }}>
+      <section id="about" className="about-section">
+        <div className="about-container"> 
+         <div className="about-grid">
 
             {/* Photo col */}
             <div>
-              <div style={{ width: '100%', aspectRatio: '3/4', background: 'var(--muted)', overflow: 'hidden' }}>
+              <div className="about-photo">
                 <img
                   src={profilePic}
                   alt="Portrait of Addo Michael Obiri"
-                  style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block', filter: 'grayscale(20%)' }}
                 />
               </div>
-              <div style={{ marginTop: '24px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              <div className="about-photo">
                 {[
                   ['Currently', 'Freelancing / Open to roles'],
                   ['Based in', 'Accra, Ghana'],
                   ['Experience', '4 years'],
                   ['Education', 'BSc Computer Science, University of Ghana'],
                 ].map(([label, value]) => (
-                  <div key={label} style={{ display: 'flex', justifyContent: 'space-between', borderBottom: '1px solid var(--border)', paddingBottom: '8px', gap: '12px' }}>
-                    <span style={{ fontSize: '12px', fontWeight: 500, letterSpacing: '0.08em', textTransform: 'uppercase', color: 'var(--muted-foreground)', flexShrink: 0 }}>{label}</span>
-                    <span style={{ fontSize: '13px', fontWeight: 400, textAlign: 'right' }}>{value}</span>
+                  <div key={label} className="about-detail">
+                    <span className="about-detail-label">{label}</span>
+                    <span className="about-detail-value">{value}</span>
                   </div>
                 ))}
               </div>
             </div>
 
             {/* Bio col */}
-            <div style={{ paddingTop: '8px' }}>
-              <p style={{ fontSize: '13px', fontWeight: 500, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '28px' }}>
-                About
-              </p>
-              <h2 style={{
-                fontFamily: 'var(--font-display)',
-                fontSize: 'clamp(32px, 4vw, 52px)',
-                fontWeight: 300,
-                lineHeight: 1.1,
-                letterSpacing: '-0.025em',
-                margin: '0 0 40px',
-              }}>
-                Code as craft,<br />
-                <em style={{ fontStyle: 'italic' }}>not commodity.</em>
-              </h2>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', width: '100%', maxWidth: '540px' }}>
+           <div className="about-content">
+             <p className="about-eyebrow">
+             About
+             </p>
+             <h2 className="about-title">
+               Code as craft,<br />
+               <em>not commodity.</em>
+             </h2>
+              <div className="about-text">
                 <p style={{ fontSize: '16px', lineHeight: 1.8, color: 'var(--muted-foreground)', margin: 0, fontWeight: 300 }}>
                   I'm a software developer with a BSc in Computer Science from the University of Ghana and four years of experience building production systems across fintech, mobility, NGO operations, and open-source tooling. I thrive in environments where good engineering can directly change outcomes for real people.
                 </p>
@@ -260,44 +252,16 @@ export default function App() {
                   I'm currently freelancing and open to full-time roles — especially with teams building infrastructure, developer tools, or products with impact in emerging markets.
                 </p>
               </div>
-              <div style={{ marginTop: '48px', display: 'flex', gap: '16px' }}>
+              <div className="about-text">
                 <a
-                  href="mailto:addo@addoobiri.dev"
-                  style={{
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: '8px',
-                    background: 'var(--foreground)',
-                    color: 'var(--primary-foreground)',
-                    padding: '14px 28px',
-                    fontSize: '14px',
-                    fontWeight: 500,
-                    textDecoration: 'none',
-                    letterSpacing: '0.03em',
-                    transition: 'opacity 0.2s',
-                  }}
-                  onMouseEnter={e => (e.currentTarget.style.opacity = '0.8')}
-                  onMouseLeave={e => (e.currentTarget.style.opacity = '1')}
-                >
+                  href="mailto:michaelobiri022@gmail.com"
+                  className="primary-button"
+                 >
                   Get in touch
                 </a>
                 <a
                   href="#"
-                  style={{
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: '8px',
-                    border: '1px solid var(--border)',
-                    color: 'var(--foreground)',
-                    padding: '14px 28px',
-                    fontSize: '14px',
-                    fontWeight: 400,
-                    textDecoration: 'none',
-                    letterSpacing: '0.03em',
-                    transition: 'border-color 0.2s',
-                  }}
-                  onMouseEnter={e => (e.currentTarget.style.borderColor = 'var(--foreground)')}
-                  onMouseLeave={e => (e.currentTarget.style.borderColor = 'var(--border)')}
+                  className="secondary-button"
                 >
                   Download CV
                 </a>
@@ -308,31 +272,31 @@ export default function App() {
       </section>
 
       {/* Process */}
-      <section id="process" style={{ width: '100%', maxWidth: '1180px', margin: '0 auto', padding: '100px 32px' }}>
-        <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '28px', fontWeight: 400, letterSpacing: '-0.02em', marginBottom: '56px' }}>
+      <section id="process" className="process-section">
+        <h2 className="process-title">
           How I build
         </h2>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: '1px', background: 'var(--border)' }}>
+       <div className="process-grid">
           {[
             { num: '01', title: 'Understand', desc: 'Requirements gathering, stakeholder alignment, and defining success metrics before a single line of code is written.' },
             { num: '02', title: 'Architect', desc: 'System design, tech stack decisions, API contracts, and data modeling that account for scale from the start.' },
             { num: '03', title: 'Build', desc: 'Clean, tested, and reviewed code shipped incrementally with CI/CD pipelines and meaningful commit history.' },
             { num: '04', title: 'Ship & Iterate', desc: 'Monitoring, feedback loops, performance tuning, and continuous improvement long after the first deploy.' },
           ].map(step => (
-            <div
-              key={step.num}
-              style={{ background: 'var(--background)', padding: '40px 32px', transition: 'background 0.2s' }}
-              onMouseEnter={e => (e.currentTarget.style.background = 'var(--card)')}
-              onMouseLeave={e => (e.currentTarget.style.background = 'var(--background)')}
-            >
-              <p style={{ fontFamily: 'var(--font-display)', fontSize: '36px', fontWeight: 300, color: 'var(--muted)', margin: '0 0 20px', letterSpacing: '-0.02em' }}>
-                {step.num}
-              </p>
-              <h3 style={{ fontSize: '16px', fontWeight: 600, margin: '0 0 12px', letterSpacing: '-0.01em' }}>
+           <div
+               key={step.num}
+               className="process-card"
+           >
+               <p className="process-number">
+                  {step.num}
+               </p>
+
+               <h3>
                 {step.title}
               </h3>
-              <p style={{ fontSize: '14px', lineHeight: 1.7, color: 'var(--muted-foreground)', margin: 0, fontWeight: 300 }}>
-                {step.desc}
+
+              <p>
+               {step.desc}
               </p>
             </div>
           ))}
@@ -340,12 +304,12 @@ export default function App() {
       </section>
 
       {/* Footer */}
-      <footer id="contact" style={{ borderTop: '1px solid var(--border)', padding: '40px 32px' }}>
-        <div style={{ width: '100%', maxWidth: '1180px', margin: '0 auto', display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <span style={{ fontFamily: 'var(--font-display)', fontWeight: 400, fontSize: '16px', letterSpacing: '-0.02em' }}>
+     <footer id="contact" className="footer">
+        <div className="footer-container">
+          <span className='footer-logo'>
             Addo Michael Obiri
           </span>
-          <div style={{ display: 'flex', gap: '24px' }}>
+          <div className="footer-links">
             {(
               [
                 { name: 'GitHub', href: 'https://github.com/obirimike' },
@@ -359,9 +323,7 @@ export default function App() {
                 href={link.href}
                 target={link.href.startsWith('mailto:') ? undefined : '_blank'}
                 rel={link.href.startsWith('mailto:') ? undefined : 'noopener noreferrer'}
-                style={{ fontSize: '13px', color: 'var(--muted-foreground)', textDecoration: 'none', letterSpacing: '0.02em', transition: 'color 0.2s' }}
-                onMouseEnter={e => (e.currentTarget.style.color = 'var(--foreground)')}
-                onMouseLeave={e => (e.currentTarget.style.color = 'var(--muted-foreground)')}
+                className="footer-link"
               >
                 {link.name}
               </a>
@@ -406,54 +368,37 @@ function CaseStudyCard({ study, large }: { study: typeof caseStudies[0]; large: 
         }} />
       </div>
 
-      <div style={{ padding: large ? '32px 40px' : '24px 28px' }}>
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '10px' }}>
-          <span style={{ fontSize: '12px', fontWeight: 500, letterSpacing: '0.1em', textTransform: 'uppercase', color: 'var(--accent)' }}>
-            {study.category}
-          </span>
-          <span style={{ fontSize: '12px', color: 'var(--muted-foreground)', letterSpacing: '0.04em' }}>
+    <div className={`case-study-content ${large ? 'large' : ''}`}>
+       <div className="case-study-meta">
+           <span className="case-study-category">
+             {study.category}
+           </span>
+
+         <span className="case-study-year">
             {study.year}
+         </span>
+       </div>
+          <h3
+           className={`case-study-title ${large ? 'large' : ''}`}>                                                     
+           {study.title}
+          </h3>
+        <div className="case-study-bottom">
+
+       <div className="case-study-tags">
+         {study.tags.map(tag => (
+         <span
+           key={tag}
+           className="case-study-tag"
+         >
+           {tag}
           </span>
-        </div>
-        <h3 style={{
-          fontFamily: 'var(--font-display)',
-          fontSize: large ? '24px' : '18px',
-          fontWeight: 400,
-          lineHeight: 1.3,
-          letterSpacing: '-0.015em',
-          margin: '0 0 16px',
-          maxWidth: large ? '600px' : '100%',
-        }}>
-          {study.title}
-        </h3>
-        <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', flexWrap: 'wrap', gap: '12px' }}>
-          <div style={{ display: 'flex', gap: '8px', flexWrap: 'wrap' }}>
-            {study.tags.map(tag => (
-              <span key={tag} style={{
-                fontSize: '11px',
-                fontWeight: 500,
-                letterSpacing: '0.06em',
-                textTransform: 'uppercase',
-                padding: '4px 10px',
-                background: 'rgba(22,24,29,0.07)',
-                color: 'var(--muted-foreground)',
-              }}>
-                {tag}
-              </span>
-            ))}
-          </div>
-          <span style={{
-            fontSize: '13px',
-            color: 'var(--foreground)',
-            fontWeight: 400,
-            display: 'flex',
-            alignItems: 'center',
-            gap: '6px',
-            opacity: hovered ? 1 : 0.6,
-            transition: 'opacity 0.3s',
-          }}>
-            {study.outcome} →
+       ))}
+       </div>
+
+          <span className="case-study-outcome">
+              {study.outcome} →
           </span>
+
         </div>
       </div>
     </div>
