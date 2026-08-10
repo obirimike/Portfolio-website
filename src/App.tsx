@@ -99,46 +99,52 @@ export default function App() {
           </div>
         </div>
       </nav>
+    {/* Hero */}
+    <section className="hero-section">
+     <div className="hero-content">
+      <div className="hero-main">
+      <p className="hero-eyebrow">
+        Software Developer — Accra, Ghana
+      </p>
 
-      {/* Hero */}
-      <section style={{ maxWidth: '1180px', margin: '0 auto', padding: '96px 32px 80px' }}>
-        <div style={{ display: 'grid', gridTemplateColumns: '1fr 320px', gap: '64px', alignItems: 'end' }}>
-          <div>
-            <p style={{ fontSize: '13px', fontWeight: 500, letterSpacing: '0.12em', textTransform: 'uppercase', color: 'var(--accent)', marginBottom: '24px' }}>
-              Software Developer — Accra, Ghana
-            </p>
-            <h1 style={{
-              fontFamily: 'var(--font-display)',
-              fontSize: 'clamp(44px, 6vw, 80px)',
-              fontWeight: 300,
-              lineHeight: 1.05,
-              letterSpacing: '-0.03em',
-              color: 'var(--foreground)',
-              margin: 0,
-            }}>
-              I build software that<br />
-              <em style={{ fontStyle: 'italic', fontWeight: 300, color: 'skyblue' }}>solves real problems.</em>
-            </h1>
-          </div>
-          <div style={{ paddingBottom: '8px' }}>
-            <p style={{ fontSize: '16px', lineHeight: 1.7, color: 'var(--muted-foreground)', margin: 0, fontWeight: 300 }}>
-              4 years of building and shipping production systems across education, fintech, and the social sector. I care about clean code, developer empathy, and software that holds up under pressure.
-            </p>
-          </div>
-        </div>
+      <h1 className="hero-title">
+        I build software that<br />
+        <em className="hero-highlight">
+          solves real problems.
+        </em>
+      </h1>
+    </div>
 
-        {/* Skills strip */}
-        <div style={{ marginTop: '72px', borderTop: '1px solid var(--border)', paddingTop: '24px', display: 'flex', gap: '48px', overflow: 'hidden', flexWrap: 'wrap' }}>
-          {skills.map(s => (
-            <span key={s} style={{ fontSize: '13px', fontWeight: 600, color: 'var(--muted-foreground)', whiteSpace: 'nowrap', letterSpacing: '0.02em', transition: 'color 0.2s' }} onMouseEnter={e => (e.currentTarget.style.color = 'var(--foreground)')} onMouseLeave={e => (e.currentTarget.style.color = 'var(--muted-foreground)')}>
-              {s}
-            </span>
-          ))}
-        </div>
-      </section>
+      <div className="hero-description">
+       <p>
+        4 years of building and shipping production systems across
+        education, fintech, and the social sector. I care about clean code,
+        developer empathy, and software that holds up under pressure.
+        </p>
+      </div>
+    </div>
+
+     {/* Skills strip */}
+      <div className="skills-strip">
+       {skills.map((s) => (
+       <span
+        key={s}
+        className="skill-item"
+        onMouseEnter={(e) =>
+          (e.currentTarget.style.color = 'var(--foreground)')
+        }
+        onMouseLeave={(e) =>
+          (e.currentTarget.style.color = 'var(--muted-foreground)')
+        }
+      >
+        {s}
+      </span>
+    ))}
+  </div>
+  </section>
 
       {/* Work */}
-      <section id="work" style={{ maxWidth: '1180px', margin: '0 auto', padding: '0 32px 100px' }}>
+      <section id="work" style={{ width: '100%', maxWidth: '1180px', margin: '0 auto', padding: '0 32px 100px' }}>
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '40px' }}>
           <h2 style={{ fontFamily: 'var(--font-display)', fontSize: '28px', fontWeight: 400, letterSpacing: '-0.02em', margin: 0 }}>
             Selected Projects
