@@ -86,7 +86,7 @@ a {
   height: 64px;
   margin: 0 auto;
   padding: 0 32px;
-
+  background-color: skyblue;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -108,7 +108,7 @@ a {
 .nav-link {
   font-size: 14px;
   font-weight: 400;
-  color: var(--muted-foreground);
+  color: var(--card-foreground);
   text-decoration: none;
   letter-spacing: 0.02em;
   transition: color 0.2s;
