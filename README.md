@@ -69,10 +69,7 @@ TypeScript and images
 
 If you use TypeScript and import images directly, ensure there is a declaration file such as `src/images.d.ts` (this repo includes one) with declarations for `.jpg`, `.jpeg`, `.png`, `.svg`, etc.
 
-Deployment
 
-- Host as static files on platforms like Vercel, Netlify, or GitHub Pages. Use the generated `dist/` from `npm run build`.
-- Example: connect the repository to Vercel and set the build command to `npm run build` and the output directory to `dist`.
 
 Notes and recommendations
 
