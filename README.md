@@ -74,7 +74,7 @@ If you use TypeScript and import images directly, ensure there is a declaration 
 Notes and recommendations
 
 - This repository was cleaned of Figma Make tooling; it now behaves as a regular Vite project.
-- `package-lock.json` is the canonical lockfile for npm in this Projectsspace.
+- `package-lock.json` is the canonical lockfile for npm in this Projects space.
 - If you plan to store large binary files, re-enable Git LFS and add an appropriate `.gitattributes` file.
 
 Contact
