@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 import path from 'node:path'
 
-// Minimal Vite config for the portfolio site (removed Figma Make integrations)
+
 export default defineConfig(({ mode }) => {
   const emitSourcemaps = mode === 'development'
 

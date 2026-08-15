@@ -69,7 +69,7 @@ TypeScript and images
 
 If you use TypeScript and import images directly, ensure there is a declaration file such as `src/images.d.ts` (this repo includes one) with declarations for `.jpg`, `.jpeg`, `.png`, `.svg`, etc.
 
-
+---
 
 Notes and recommendations
 
