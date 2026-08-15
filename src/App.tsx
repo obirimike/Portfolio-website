@@ -153,7 +153,7 @@ const scrollToTop = () => {
      <div className="hero-content">
       <div className="hero-main">
       <p className="hero-eyebrow">
-        Software Developer — Accra, Ghana
+        Software Engineer — Accra, Ghana
       </p>
 
       <h1 className="hero-title">
