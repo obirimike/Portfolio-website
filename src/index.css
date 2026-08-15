@@ -407,10 +407,11 @@ a {
 
 .about-container {
   width: 100%;
-  max-width: 1180px;
+  max-width: 100%;
   margin: 0 auto;
   padding: 100px 32px;
 }
+
 
 .about-grid {
   display: grid;
@@ -422,8 +423,8 @@ a {
 .about-photo {
   width: 100%;
   aspect-ratio: 5 / 6;
-  background: var(--muted);
   overflow: hidden;
+  border-radius: 25px;
 }
 
 .about-photo img {

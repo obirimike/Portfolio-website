@@ -230,7 +230,7 @@ const scrollToTop = () => {
          <div className="about-grid">
 
             {/* Photo col */}
-            <div>
+            <div className="aboutImage-container">
               <div className="about-photo">
                 <img
                   src={profilePic}
@@ -257,21 +257,34 @@ const scrollToTop = () => {
              <p className="about-eyebrow">
              About
              </p>
-             <h2 className="about-title">
-               Code as craft,<br />
-               <em>not commodity.</em>
-             </h2>
-              <div className="about-text">
-                <p style={{ fontSize: '16px', lineHeight: 1.8, color: 'var(--muted-foreground)', margin: 0, fontWeight: 300 }}>
-                  I'm a software developer with a BSc in Computer Science from the University of Ghana and four years of experience building production systems across fintech, mobility, NGO operations, and open-source tooling. I thrive in environments where good engineering can directly change outcomes for real people.
-                </p>
-                <p style={{ fontSize: '16px', lineHeight: 1.8, color: 'var(--muted-foreground)', margin: 0, fontWeight: 300 }}>
-                  My Projects spans the full stack — from designing PostgreSQL schemas and WebSocket servers to building accessible React interfaces and shipping npm packages used in production. I write code that others can read, test, and extend without needing to ask me questions.
-                </p>
-                <p style={{ fontSize: '16px', lineHeight: 1.8, color: 'var(--muted-foreground)', margin: 0, fontWeight: 300 }}>
-                  I'm currently freelancing and open to full-time roles — especially with teams building infrastructure, developer tools, or products with impact in emerging markets.
-                </p>
-              </div>
+                <h2 className="about-title">
+                  Building with purpose,<br />
+                   <em>learning by doing.</em>
+                </h2>
+             <div className="about-text">
+              <p style={{ fontSize: '16px', lineHeight: 1.5, color: 'var(--muted-foreground)', margin: 0, fontWeight: 300 }}>
+                 I'm a Computer Science student at the University of Ghana and a software
+                 developer passionate about turning ideas into practical, reliable
+                 digital products. I enjoy solving problems with code, learning new
+                 technologies, and building systems that are useful beyond the classroom.
+              </p>
+
+              <p style={{ fontSize: '16px', lineHeight: 1.5, color: 'var(--muted-foreground)', margin: 0, fontWeight: 300 }}>
+              My experience spans full-stack web and mobile development, with hands-on
+               work in React, React Native, Node.js, ASP.NET Core, Java, Python,
+               PostgreSQL, MongoDB, and REST APIs. From university projects and
+              collaborative software teams to personal products, I focus on writing
+              clean, maintainable code and understanding the systems behind what I build.
+            </p>
+
+            <p style={{ fontSize: '16px', lineHeight: 1.5, color: 'var(--muted-foreground)', margin: 0, fontWeight: 300, marginBottom: 20,}}>
+              I'm constantly improving as a developer through real projects, teamwork,
+              and continuous learning. My long-term goal is to become a highly skilled
+              software engineer and computer scientist, contributing to products and
+               technologies that create meaningful impact, especially within emerging
+             markets.
+           </p>
+         </div>
               <div className="about-text">
                 <a
                   href="mailto:michaelobiri022@gmail.com"
