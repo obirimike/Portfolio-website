@@ -82,11 +82,11 @@ a {
 
 .nav-container {
   width: 100%;
-  max-width: 1180px;
+  max-width: 100%;
   height: 64px;
   margin: 0 auto;
   padding: 0 32px;
-  background-color: skyblue;
+  background-color:skyblue;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -524,6 +524,7 @@ a {
   letter-spacing: 0.03em;
   text-decoration: none;
   transition: all 0.2s;
+  background: skyblue;
 }
 
 .primary-button {
@@ -739,6 +740,8 @@ a {
   .nav-container {
     height: 60px;
     padding: 0 20px;
+    background-color: skyblue;
+   
   }
 
   .nav-logo {
@@ -747,11 +750,12 @@ a {
 
   .nav-links {
     display: none;
+    
   }
 
   .mobile-menu-button {
     display: block;
-    font-size: 24px;
+    font-size: 30px;
   }
 
   /* HERO */

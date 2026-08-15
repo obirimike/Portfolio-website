@@ -280,7 +280,7 @@ const scrollToTop = () => {
                   Get in touch
                 </a>
                 <a
-                  href="#"
+                  href="/cv/Addo_Michael_Obiri_CV.pdf"
                   className="secondary-button"
                 >
                   Download CV
