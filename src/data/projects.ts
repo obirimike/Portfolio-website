@@ -32,7 +32,7 @@ export const caseStudies: CaseStudy[] = [
     year: '2025',
     tags: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Stripe API'],
     outcome:
-      'Successfully launched the website with integrated payment processing, resulting in a 30% increase in online enrollment',
+      'Successfully launched the website with integrated payment processing.',
     image:
       'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=900&h=600&fit=crop&auto=format',
     color: '#dceae0',
@@ -46,7 +46,7 @@ export const caseStudies: CaseStudy[] = [
     year: '2023',
     tags: ['React', 'Node.js', 'Tailwind CSS', 'Python', 'Machine Learning'],
     outcome:
-      'Successfully developed an expert system that recommends optimal cafeteria menus based on dietary restrictions, nutritional requirements, and user preferences, resulting in a 25% increase in customer satisfaction',
+      'Successfully developed an expert system that recommends optimal cafeteria menus based on dietary restrictions, nutritional requirements, and user preferences.', 
     image:
       'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=900&h=600&fit=crop&auto=format',
     color: '#e8e4dc',
@@ -74,7 +74,7 @@ export const caseStudies: CaseStudy[] = [
     year: '2021',
     tags: ['React', 'Socket.io', 'Node.js', 'MongoDB'],
     outcome:
-      'Successfully launched the chat application, resulting in a 40% increase in volunteer engagement and improved communication with beneficiaries',
+      'Successfully launched the chat application.', 
     image:
       'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=900&h=600&fit=crop&auto=format',
     color: '#e4e8dc',

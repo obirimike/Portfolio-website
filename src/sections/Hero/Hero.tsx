@@ -42,20 +42,19 @@ export default function Hero() {
 
         {/* Description */}
         <div className="hero-description">
-          <motion.p
-            initial={{ opacity: 0, y: -40 }}
+         <motion.p
+             initial={{ opacity: 0, y: -40 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{
-              duration: 1,
-              delay: 0.8,
-              ease: [0.22, 1, 0.36, 1],
+            duration: 1,
+            delay: 0.8,
+            ease: [0.22, 1, 0.36, 1],
             }}
           >
-            4 years of building and shipping production systems across
-            education, fintech, and the social sector. I care about clean
-            code, developer empathy, and software that holds up under
-            pressure.
-          </motion.p>
+              I'm a software developer and Computer Science student in Accra,
+             Ghana, building web and mobile applications with React, React Native,
+             Node.js, ASP.NET Core, Python, and modern backend technologies.
+           </motion.p>
         </div>
 
       </div>
