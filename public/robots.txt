@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mikeportfolio233.com/sitemap.xml
