@@ -36,11 +36,11 @@
 html {
   scroll-behavior: smooth;
 }
-@media (prefers-reduced-motion: reduce) {
+/* @media (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
   }
-}
+} */
 
 body {
   margin: 0;
@@ -67,7 +67,9 @@ a {
   width: 0;
   height: 0;
 }
-
+section {
+  scroll-margin-top: 80px;
+}
 ::selection {
   background: var(--accent);
   color: var(--accent-foreground);
@@ -133,6 +135,13 @@ a {
   font-size: 24px;
   cursor: pointer;
   padding: 4px;
+}
+.mobile-menu-button:focus-visible,
+.nav-link:focus-visible,
+button:focus-visible,
+a:focus-visible {
+  outline: 2px solid var(--foreground);
+  outline-offset: 4px;
 }
 
 /* ------------------------------
