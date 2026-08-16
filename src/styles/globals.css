@@ -210,14 +210,14 @@ a {
    Projects / PROJECTS
 ------------------------------ */
 
-.Projects-section {
+.projects-section {
   width: 100%;
   max-width: 1180px;
   margin: 0 auto;
   padding: 0 32px 100px;
 }
 
-.Projects-header {
+.projects-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -803,11 +803,11 @@ a {
 
   /* Projects */
 
-  .Projects-section {
+  .projects-section {
     padding: 0 20px 64px;
   }
 
-  .Projects-header {
+  .projects-header {
     align-items: flex-start;
     flex-direction: column;
     gap: 24px;
@@ -980,7 +980,7 @@ a {
 
   .about-container,
   .process-section,
-  .Projects-section {
+  .projects-section {
     padding-left: 16px;
     padding-right: 16px;
   }
