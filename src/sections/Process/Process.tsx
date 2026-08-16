@@ -1,4 +1,7 @@
-import Reveal from '../../components/animations/Reveal'
+import { motion } from 'framer-motion'
+import Stagger, {
+  staggerItem,
+} from '../../components/animations/Stagger'
 
 const processSteps = [
   {
@@ -26,35 +29,38 @@ const processSteps = [
 export default function Process() {
   return (
     <section id="process" className="process-section">
-      <Reveal distance={60}>
-        <h2 className="process-title">
-          How I build
-        </h2>
-      </Reveal>
+      <motion.h2
+        className="process-title"
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{
+          duration: 0.8,
+          ease: [0.22, 1, 0.36, 1],
+        }}
+      >
+        How I build
+      </motion.h2>
 
-      <div className="process-grid">
-        {processSteps.map((step, index) => (
-          <Reveal
-            key={step.num}
-            distance={70}
-            delay={index * 0.12}
-          >
-            <div className="process-card">
+      <Stagger>
+        <div className="process-grid">
+          {processSteps.map((step) => (
+            <motion.div
+              key={step.num}
+              className="process-card"
+              variants={staggerItem}
+            >
               <p className="process-number">
                 {step.num}
               </p>
 
-              <h3>
-                {step.title}
-              </h3>
+              <h3>{step.title}</h3>
 
-              <p>
-                {step.desc}
-              </p>
-            </div>
-          </Reveal>
-        ))}
-      </div>
+              <p>{step.desc}</p>
+            </motion.div>
+          ))}
+        </div>
+      </Stagger>
     </section>
   )
 }
