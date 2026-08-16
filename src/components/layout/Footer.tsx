@@ -1,21 +1,4 @@
-const socialLinks = [
-  {
-    name: 'GitHub',
-    href: 'https://github.com/obirimike',
-  },
-  {
-    name: 'LinkedIn',
-    href: 'https://www.linkedin.com/in/michael-addo-k23',
-  },
-  {
-    name: 'Twitter',
-    href: 'https://twitter.com/kweku_mk',
-  },
-  {
-    name: 'Email',
-    href: 'mailto:michaelobiri022@gmail.com',
-  },
-]
+import { socialLinks } from '../../data/socialLinks'
 
 export default function Footer() {
   return (
@@ -48,14 +31,8 @@ export default function Footer() {
           })}
         </div>
 
-        <span
-          style={{
-            fontSize: '12px',
-            color: 'var(--muted-foreground)',
-            letterSpacing: '0.02em',
-          }}
-        >
-          © 2026
+        <span className="footer-copyright">
+          © {new Date().getFullYear()}
         </span>
 
       </div>
