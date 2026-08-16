@@ -17,16 +17,14 @@ export default function App() {
       }}
     >
       <Navbar />
-
-      <Hero />
-
-      <Projects />
-
-      <About />
        
-      <Process />
-      
-      <Footer />
+      <main>
+       <Hero />
+       <Projects />
+       <About />
+       <Process />
+       <Footer />
+      </main>
       
       <BackToTop />
 
