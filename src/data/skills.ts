@@ -1,0 +1,16 @@
+export const skills = [
+  'React',
+  'TypeScript',
+  'Node.js',
+  'PostgreSQL',
+  'MongoDB',
+  'REST APIs',
+  'Git',
+  'Docker',
+  'Python',
+  'PHP',
+  'UI/UX Design',
+  'System Design',
+  'Linux',
+  'Agile',
+]
