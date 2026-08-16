@@ -214,8 +214,8 @@ const scrollToTop = () => {
   </section>
 
       {/* Projects */}
-     <section id="Projects" className="Projects-section">
-        <div className="Projects-header">
+     <section id="projects" className="projects-section">
+        <div className="projects-header">
   <h2 className="section-title">
     Selected Projects
   </h2>
