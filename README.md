@@ -10,7 +10,7 @@ A modern, responsive personal portfolio website for **Addo Michael Obiri**, a so
 
 The portfolio showcases selected software projects, technical skills, development experience, engineering process, and professional contact information through a clean, minimal, and responsive single-page experience.
 
-**Live Portfolio:** [michaelobiri022.netlify.app](https://michaelobiri022.netlify.app)
+**Live Portfolio:** [michaelobiri.netlify.app](https://michaelobiri.netlify.app)
 
 ---
 
