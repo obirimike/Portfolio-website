@@ -634,7 +634,7 @@ a:focus-visible {
 .footer {
   border-top: 1px solid var(--border);
   padding: 40px 32px;
-  background-color: #e4dcea ;
+  background-color: #d6d5d7 ;
 }
 
 .footer-container {
@@ -895,12 +895,13 @@ a:focus-visible {
   /* ABOUT */
 
   .about-container {
-    padding: 64px 20px;
+    padding: 34px 20px;
+  
   }
 
   .about-grid {
     grid-template-columns: 1fr;
-    gap: 48px;
+    gap: 0px;
   }
 
   .about-photo {
@@ -915,7 +916,7 @@ a:focus-visible {
 
   .about-eyebrow {
     font-size: 15px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
 
   .about-title {
