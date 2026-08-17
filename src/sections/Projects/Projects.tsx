@@ -1,6 +1,6 @@
 import { useMemo, useState } from 'react'
 
-import { caseStudies } from '../../data/Projects'
+import { caseStudies } from '../../data/projects'
 
 import CaseStudyCard from './CaseStudyCard'
 import ProjectFilters from './ProjectFilters'

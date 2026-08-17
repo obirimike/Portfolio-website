@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import type { CaseStudy } from '../../data/Projects'
+import type { CaseStudy } from '../../data/projects'
 
 interface CaseStudyCardProps {
   study: CaseStudy
