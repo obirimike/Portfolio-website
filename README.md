@@ -306,11 +306,11 @@ Addo Michael Obiri
 Software Developer
 Accra, Ghana
 
-Email: michaelobiri022@gmail.com
+Email: michaelobiri@gmail.com
 GitHub: github.com/obirimike
 LinkedIn: linkedin.com/in/michael-addo-k23
 Twitter/X: @kweku_mk
-Portfolio: michaelobiri022.netlify.app
+Portfolio: michaelobiri.netlify.app
 
 ##License
 

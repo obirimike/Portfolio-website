@@ -152,7 +152,7 @@ export default function About() {
               <div className="about-text">
 
                 <a
-                  href="mailto:michaelobiri022@gmail.com"
+                  href="mailto:michaelobiri@gmail.com"
                   className="primary-button"
                 >
                   Get in touch
