@@ -110,7 +110,7 @@ export default function About() {
                   My experience spans full-stack web and mobile
                   development, with hands-on work in React,
                   React Native, Node.js, ASP.NET Core, Java,
-                  Python, PostgreSQL, MongoDB, and REST APIs.
+                   PostgreSQL, MongoDB, and REST APIs.
                   From university projects and collaborative
                   software teams to personal products, I focus
                   on writing clean, maintainable code and

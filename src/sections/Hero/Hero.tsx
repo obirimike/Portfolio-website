@@ -53,7 +53,7 @@ export default function Hero() {
           >
               I'm a software developer and Computer Science student in Accra,
              Ghana, building web and mobile applications with React, React Native,
-             Node.js, ASP.NET Core, Python, and modern backend technologies.
+             Node.js, Java, ASP.NET Core and modern backend technologies.
            </motion.p>
         </div>
 
