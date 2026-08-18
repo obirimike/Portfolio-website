@@ -1,5 +1,6 @@
 import StPauls from '../assets/images/ProjectsImages/StPauls.png';
 import UGMart from '../assets/images/ProjectsImages/UGMart.png';
+import CMA from '../assets/images/ProjectsImages/CMA.jpeg';
 
 export interface CaseStudy {
   id: number
@@ -43,14 +44,14 @@ export const caseStudies: CaseStudy[] = [
   {
     id: 3,
     title:
-      'Built an expert system for Cafeteria Menu Planning using AI and Machine Learning',
+      'Built an expert system together with my team for Cafeteria Menu Planning using AI and Machine Learning',
     category: 'Expert Systems Development',
     year: '2023',
-    tags: ['React', 'Node.js', 'Tailwind CSS', 'Python', 'Machine Learning'],
+    tags: ['React', 'Flask', 'Tailwind CSS', 'Python', 'Prolog'],
     outcome:
       'Successfully developed an expert system that recommends optimal cafeteria menus based on dietary restrictions, nutritional requirements, and user preferences.', 
     image:
-      'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=900&h=600&fit=crop&auto=format',
+      CMA,
     color: '#e8e4dc',
   },
 
