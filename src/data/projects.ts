@@ -23,7 +23,7 @@ export const caseStudies: CaseStudy[] = [
     outcome:
       'Still in Production, but early user feedback is positive',
     image:
-      'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=900&h=600&fit=crop&auto=format',
+      UGMart,
     color: '#dce4f0',
   },
 
