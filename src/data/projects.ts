@@ -1,3 +1,5 @@
+import StPauls from '../assets/images/ProjectsImages/StPauls.png';
+
 export interface CaseStudy {
   id: number
   title: string
@@ -30,12 +32,11 @@ export const caseStudies: CaseStudy[] = [
       'Website Development for a Ghanaian Education institution with integrated payment processing',
     category: 'Full Stack Web Development',
     year: '2025',
-    tags: ['HTML', 'CSS', 'JavaScript', 'Node.js', 'Stripe API'],
+    tags: ['HTML', 'CSS', 'JavaScript', 'Stripe API'],
     outcome:
       'Successfully launched the website with integrated payment processing.',
-    image:
-      'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=900&h=600&fit=crop&auto=format',
-    color: '#dceae0',
+    image: StPauls,
+    color: '#dceae0'
   },
 
   {
