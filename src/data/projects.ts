@@ -1,4 +1,5 @@
 import StPauls from '../assets/images/ProjectsImages/StPauls.png';
+import UGMart from '../assets/images/ProjectsImages/UGMart.png';
 
 export interface CaseStudy {
   id: number
