@@ -5,7 +5,6 @@ import ONPT from '../assets/images/ProjectsImages/ONPT.jpeg';
 import CHAT from '../assets/images/ProjectsImages/CHAT.jpeg';
 import PRO from '../assets/images/ProjectsImages/PRO.jpeg';
 
-import { color } from 'framer-motion';
 
 export interface CaseStudy {
   id: number
@@ -16,6 +15,8 @@ export interface CaseStudy {
   outcome: string
   image: string
   color: string
+  liveUrl?: string
+  githubUrl?: string
 }
 
 export const caseStudies: CaseStudy[] = [
@@ -31,6 +32,8 @@ export const caseStudies: CaseStudy[] = [
     image:
       UGMart,
     color: '#dce4f0',
+    // liveUrl: 'https://ugmart.com',
+    githubUrl: 'https://github.com/obirimike/UGMart-CampusMarket-SPA.git',
   },
 
   {
@@ -43,7 +46,9 @@ export const caseStudies: CaseStudy[] = [
     outcome:
       'Successfully launched the website with integrated payment processing.',
     image: StPauls,
-    color: '#dceae0'
+    color: '#dceae0',
+    // liveUrl: 'https://ugmart.com',
+    githubUrl: 'https://github.com/obirimike/School-Website.git',
   },
 
   {
@@ -58,6 +63,8 @@ export const caseStudies: CaseStudy[] = [
     image:
       CMA,
     color: '#e8e4dc',
+    liveUrl: 'https://expertsys.netlify.app',
+    githubUrl: 'https://github.com/obirimike/your-repository',
   },
 
   {
@@ -72,6 +79,8 @@ export const caseStudies: CaseStudy[] = [
     image:
       ONPT,
     color: '#e4dcea',
+    // liveUrl: 'https://ugmart.com',
+    githubUrl: 'https://github.com/obirimike/OnPoint-Website.git',
   },
 
   {
@@ -86,6 +95,8 @@ export const caseStudies: CaseStudy[] = [
     image:
       CHAT,
     color: '#e4e8dc',
+    // liveUrl: 'https://ugmart.com',
+    githubUrl: 'https://github.com/obirimike/your-repository',
   },
 
   {
@@ -99,5 +110,7 @@ export const caseStudies: CaseStudy[] = [
     image:
      PRO,
     color:'#e8e4dc',
+    liveUrl: 'https://profilecard.netlify.app',
+    githubUrl: 'https://github.com/obirimike/Profile-Card.git',
   }
 ]
