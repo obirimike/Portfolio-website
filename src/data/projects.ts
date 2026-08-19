@@ -63,7 +63,7 @@ export const caseStudies: CaseStudy[] = [
     image:
       CMA,
     color: '#e8e4dc',
-    liveUrl: 'https://expertsys.netlify.app',
+    liveUrl: 'https://expertsys.vercel.app',
     githubUrl: 'https://github.com/obirimike/your-repository',
   },
 
@@ -110,7 +110,7 @@ export const caseStudies: CaseStudy[] = [
     image:
      PRO,
     color:'#e8e4dc',
-    liveUrl: 'https://profilecard.netlify.app',
+    liveUrl: 'https://profilecard.vercel.app',
     githubUrl: 'https://github.com/obirimike/Profile-Card.git',
   }
 ]
