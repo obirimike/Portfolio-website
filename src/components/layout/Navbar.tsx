@@ -3,7 +3,7 @@ import { useState } from 'react'
 export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
-  const navItems = ['Projects', 'About', 'Process', 'Contact']
+  const navItems = ['About', 'Projects', 'Process', 'Contact']
 
   return (
     <nav style={{ borderBottom: '1px solid var(--border)' }}>

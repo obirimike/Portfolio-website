@@ -20,8 +20,8 @@ export default function App() {
        
       <main>
        <Hero />
-       <Projects />
        <About />
+       <Projects />
        <Process />
        <Footer />
       </main>
