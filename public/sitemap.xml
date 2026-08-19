@@ -3,31 +3,31 @@
   xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
 >
   <url>
-    <loc>https://michaelobiri.netlify.app/</loc>
+    <loc>https://michaelobiri.vercel.app/</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://michaelobiri.netlify.app/#projects</loc>
+    <loc>https://michaelobiri.vercel.app/#projects</loc>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
-    <loc>https://michaelobiri.netlify.app/#about</loc>
+    <loc>https://michaelobiri.vercel.app/#about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-    <loc>https://michaelobiri.netlify.app/#process</loc>
+    <loc>https://michaelobiri.vercel.app/#process</loc>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
-    <loc>https://michaelobiri.netlify.app/#contact</loc>
+    <loc>https://michaelobiri.vercel.app/#contact</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

@@ -10,7 +10,7 @@ A modern, responsive personal portfolio website for **Addo Michael Obiri**, a so
 
 The portfolio showcases selected software projects, technical skills, development experience, engineering process, and professional contact information through a clean, minimal, and responsive single-page experience.
 
-**Live Portfolio:** [michaelobiri.netlify.app](https://michaelobiri.netlify.app)
+**Live Portfolio:** [michaelobiri.vercel.app](https://michaelobiri.vercel.app)
 
 ---
 
@@ -285,7 +285,7 @@ The project uses Vite's production build process and avoids unnecessary dependen
 
 The application is a client-side Vite application and can be deployed to modern static hosting platforms such as:
 
-Netlify
+vercel
 Vercel
 GitHub Pages
 Cloudflare Pages
@@ -310,7 +310,7 @@ Email: michaelobiri@gmail.com
 GitHub: github.com/obirimike
 LinkedIn: linkedin.com/in/michael-addo-k23
 Twitter/X: @kweku_mk
-Portfolio: michaelobiri.netlify.app
+Portfolio: michaelobiri.vercel.app
 
 ##License
 

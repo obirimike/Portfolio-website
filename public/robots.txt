@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://michaelobiri.netlify.app/sitemap.xml
+Sitemap: https://michaelobiri.vercel.app/sitemap.xml
