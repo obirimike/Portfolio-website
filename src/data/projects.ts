@@ -1,6 +1,8 @@
 import StPauls from '../assets/images/ProjectsImages/StPauls.png';
 import UGMart from '../assets/images/ProjectsImages/UGMart.png';
 import CMA from '../assets/images/ProjectsImages/CMA.jpeg';
+import ONPT from '../assets/images/ProjectsImages/ONPT.jpeg';
+import CHAT from '../assets/images/ProjectsImages/CHAT.jpeg';
 
 export interface CaseStudy {
   id: number
@@ -46,7 +48,7 @@ export const caseStudies: CaseStudy[] = [
     title:
       'Built an expert system together with my team for Cafeteria Menu Planning using AI and Machine Learning',
     category: 'Expert Systems Development',
-    year: '2023',
+    year: '2026',
     tags: ['React', 'Flask', 'Tailwind CSS', 'Python', 'Prolog'],
     outcome:
       'Successfully developed an expert system that recommends optimal cafeteria menus based on dietary restrictions, nutritional requirements, and user preferences.', 
@@ -58,14 +60,14 @@ export const caseStudies: CaseStudy[] = [
   {
     id: 4,
     title:
-      ' Independently designed and built a responsive website for OnPoint, start to finish',
+      ' A modern company website I designed for a technology solutions company.',
     category: 'Web Development',
     year: '2025',
     tags: ['HTML', 'CSS', 'Javascript', 'Vite'],
     outcome:
-      'Successfully launched the website',
+      'Successfully launched the business website focused on presenting company information and services through a modern web interface.',
     image:
-      'https://images.unsplash.com/photo-1555099962-4199c345e5dd?w=900&h=600&fit=crop&auto=format',
+      ONPT,
     color: '#e4dcea',
   },
 
@@ -79,7 +81,7 @@ export const caseStudies: CaseStudy[] = [
     outcome:
       'Successfully launched the chat application.', 
     image:
-      'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=900&h=600&fit=crop&auto=format',
+      CHAT,
     color: '#e4e8dc',
   },
 ]
