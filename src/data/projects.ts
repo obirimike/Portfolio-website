@@ -3,6 +3,9 @@ import UGMart from '../assets/images/ProjectsImages/UGMart.png';
 import CMA from '../assets/images/ProjectsImages/CMA.jpeg';
 import ONPT from '../assets/images/ProjectsImages/ONPT.jpeg';
 import CHAT from '../assets/images/ProjectsImages/CHAT.jpeg';
+import PRO from '../assets/images/ProjectsImages/PRO.jpeg';
+
+import { color } from 'framer-motion';
 
 export interface CaseStudy {
   id: number
@@ -65,7 +68,7 @@ export const caseStudies: CaseStudy[] = [
     year: '2025',
     tags: ['HTML', 'CSS', 'Javascript', 'Vite'],
     outcome:
-      'Successfully launched the business website focused on presenting company information and services through a modern web interface.',
+      'Still in the production phase-launching soon!🚀.',
     image:
       ONPT,
     color: '#e4dcea',
@@ -76,12 +79,25 @@ export const caseStudies: CaseStudy[] = [
     title:
       'Real-time chat application for a local NGO to facilitate communication between volunteers and beneficiaries',
     category: 'Real-time Communication',
-    year: '2021',
+    year: '2026',
     tags: ['React', 'Socket.io', 'Node.js', 'MongoDB'],
     outcome:
-      'Successfully launched the chat application.', 
+      'Still in the production phase-launching soon!🚀', 
     image:
       CHAT,
     color: '#e4e8dc',
   },
+
+  {
+    id :6,
+    title: 'A simple and elegant profile card designed to display basic user information in a visually appealing format',
+    category: 'Web Development',
+    year: '2024',
+    tags: ['HTML', 'Tailwind CSS', 'Javascript'],
+    outcome:
+    'Successfully finished and deployed it',
+    image:
+     PRO,
+    color:'#e8e4dc',
+  }
 ]
