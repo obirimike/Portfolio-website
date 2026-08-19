@@ -884,12 +884,17 @@ a:focus-visible {
 
   .case-study-bottom {
     align-items: flex-start;
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .case-study-outcome {
     width: 100%;
     line-height: 1.5;
+  }
+
+  .case-study-links {
+    gap: 12px;
+    align-items: flex-start;
   }
 
   /* ABOUT */

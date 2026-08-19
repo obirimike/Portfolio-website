@@ -21,6 +21,7 @@ export default function CaseStudyCard({
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
     >
+      {/* Project Image */}
       <div
         className={`case-study-image ${
           large ? 'large' : 'normal'
@@ -28,7 +29,7 @@ export default function CaseStudyCard({
       >
         <img
           src={study.image}
-          alt={study.title}
+          alt={`${study.title} — ${study.category}`}
         />
 
         <div
@@ -43,11 +44,13 @@ export default function CaseStudyCard({
         />
       </div>
 
+      {/* Project Content */}
       <div
         className={`case-study-content ${
           large ? 'large' : ''
         }`}
       >
+        {/* Category and Year */}
         <div className="case-study-meta">
           <span className="case-study-category">
             {study.category}
@@ -58,6 +61,7 @@ export default function CaseStudyCard({
           </span>
         </div>
 
+        {/* Title */}
         <h3
           className={`case-study-title ${
             large ? 'large' : ''
@@ -66,8 +70,10 @@ export default function CaseStudyCard({
           {study.title}
         </h3>
 
+        {/* Bottom Content */}
         <div className="case-study-bottom">
 
+          {/* Technologies */}
           <div className="case-study-tags">
             {study.tags.map((tag) => (
               <span
@@ -79,10 +85,39 @@ export default function CaseStudyCard({
             ))}
           </div>
 
+          {/* Outcome */}
           <span className="case-study-outcome">
-            {study.outcome} →
+            {study.outcome}
           </span>
 
+          {/* Project Links */}
+          <div className="case-study-links">
+
+            {/* Live Website */}
+            {study.liveUrl && (
+              <a
+                href={study.liveUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                Live Demo ↗
+              </a>
+            )}
+
+            {/* GitHub Repository */}
+            {study.githubUrl && (
+              <a
+                href={study.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="project-link"
+              >
+                GitHub ↗
+              </a>
+            )}
+
+          </div>
         </div>
       </div>
     </div>
