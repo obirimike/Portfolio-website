@@ -58,12 +58,12 @@ export const caseStudies: CaseStudy[] = [
   {
     id: 4,
     title:
-      'Open-source component library adopted across 3 local startups',
-    category: 'Open Source',
-    year: '2022',
-    tags: ['React', 'Storybook', 'npm'],
+      ' Independently designed and built a responsive website for OnPoint, start to finish',
+    category: 'Web Development',
+    year: '2025',
+    tags: ['HTML', 'CSS', 'Javascript', 'Vite'],
     outcome:
-      '800+ GitHub stars, 12k weekly downloads',
+      'Successfully launched the website',
     image:
       'https://images.unsplash.com/photo-1555099962-4199c345e5dd?w=900&h=600&fit=crop&auto=format',
     color: '#e4dcea',
