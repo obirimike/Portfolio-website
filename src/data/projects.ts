@@ -110,7 +110,7 @@ export const caseStudies: CaseStudy[] = [
     image:
      PRO,
     color:'#e8e4dc',
-    liveUrl: 'https://profilecard.vercel.app',
+    liveUrl: 'https://mikeprofilecard.vercel.app',
     githubUrl: 'https://github.com/obirimike/Profile-Card.git',
   }
 ]
